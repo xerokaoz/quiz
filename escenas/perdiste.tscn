@@ -1,0 +1,103 @@
+[gd_scene load_steps=15 format=3 uid="uid://cey5e5hrpfvrd"]
+
+[ext_resource type="Shader" uid="uid://bbnim8l72v6xf" path="res://shaders/perdiste.tres" id="1_csd0a"]
+[ext_resource type="Script" uid="uid://cyrlwk8qwjhgq" path="res://scripts/perdiste.gd" id="1_rrxmj"]
+[ext_resource type="Texture2D" uid="uid://0ivmjopad6qf" path="res://imagenes/perder.jpg" id="2_1ekmo"]
+[ext_resource type="Texture2D" uid="uid://cpgmfk0rg8i57" path="res://animaciones/luffy_sad/frame_0_delay-0.09s.png" id="3_lywqv"]
+[ext_resource type="Texture2D" uid="uid://blof38e352pf2" path="res://animaciones/luffy_sad/frame_1_delay-0.09s.png" id="4_csd0a"]
+[ext_resource type="Texture2D" uid="uid://b342bpsqpsm20" path="res://animaciones/luffy_sad/frame_2_delay-0.09s.png" id="5_kxv73"]
+[ext_resource type="Texture2D" uid="uid://dgah7hg5jyk51" path="res://animaciones/luffy_sad/frame_3_delay-0.09s.png" id="6_wbqvc"]
+[ext_resource type="Texture2D" uid="uid://b8i8d6wajr6oe" path="res://animaciones/luffy_sad/frame_4_delay-0.09s.png" id="7_hiwli"]
+[ext_resource type="Texture2D" uid="uid://bo2v1m7sfhxet" path="res://animaciones/luffy_sad/frame_5_delay-0.03s.png" id="8_0olgx"]
+[ext_resource type="Texture2D" uid="uid://ciodjq8gl3vd5" path="res://animaciones/luffy_sad/frame_6_delay-0.15s.png" id="9_ayk3m"]
+[ext_resource type="Texture2D" uid="uid://bm1rfyksxymtf" path="res://animaciones/luffy_sad/frame_7_delay-0.18s.png" id="10_ijmu4"]
+[ext_resource type="AudioStream" uid="uid://driay5uqbatar" path="res://musica y sonidos/sad.ogg" id="11_url04"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_csd0a"]
+shader = ExtResource("1_csd0a")
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_nxso8"]
+frames = 8
+frame_0/texture = ExtResource("3_lywqv")
+frame_0/duration = 0.09
+frame_1/texture = ExtResource("4_csd0a")
+frame_1/duration = 0.09
+frame_2/texture = ExtResource("5_kxv73")
+frame_2/duration = 0.09
+frame_3/texture = ExtResource("6_wbqvc")
+frame_3/duration = 0.09
+frame_4/texture = ExtResource("7_hiwli")
+frame_4/duration = 0.09
+frame_5/texture = ExtResource("8_0olgx")
+frame_5/duration = 0.03
+frame_6/texture = ExtResource("9_ayk3m")
+frame_6/duration = 0.15
+frame_7/texture = ExtResource("10_ijmu4")
+frame_7/duration = 0.18
+
+[node name="Perdiste" type="Node2D"]
+script = ExtResource("1_rrxmj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -2.0
+offset_right = 1923.0
+offset_bottom = 1081.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1ekmo")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+material = SubResource("ShaderMaterial_csd0a")
+layout_mode = 0
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 1919.0
+offset_bottom = 1081.0
+size_flags_horizontal = 0
+
+[node name="Button" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 575.0
+offset_right = 449.0
+offset_bottom = 687.0
+theme_override_font_sizes/font_size = 56
+text = "REINTENTAR"
+
+[node name="score" type="Label" parent="."]
+offset_right = 1924.0
+offset_bottom = 331.0
+theme_override_colors/font_color = Color(0.74842, 5.80457e-05, 0.589899, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 91
+text = "haz perdido"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="."]
+offset_left = 14.0
+offset_top = 742.0
+offset_right = 1907.0
+offset_bottom = 996.0
+theme_override_colors/font_color = Color(0.627791, 1.9132e-06, 3.36915e-07, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 186
+text = "Pusiste triste a Robin"
+
+[node name="luffy" type="Sprite2D" parent="."]
+position = Vector2(1648, 564)
+texture = SubResource("AnimatedTexture_nxso8")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_url04")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="TextureRect/Button" to="." method="_on_button_pressed"]

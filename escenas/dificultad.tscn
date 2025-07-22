@@ -1,0 +1,111 @@
+[gd_scene load_steps=7 format=3 uid="uid://dujw8ci1uubm5"]
+
+[ext_resource type="Script" uid="uid://dv0s6htkfrhlu" path="res://scripts/dificultad.gd" id="1_b66tt"]
+[ext_resource type="Texture2D" uid="uid://dhy4u3d2akusk" path="res://imagenes/DIFICULTAD.png" id="1_fsl0g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b66tt"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mae5d"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hy44"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_33xl7"]
+bg_color = Color(0.976471, 0.290196, 0.666667, 0.52549)
+
+[node name="dificultad" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b66tt")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.428838, 0.620419, 0.600888, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -963.0
+offset_top = -542.5
+offset_right = 963.0
+offset_bottom = 542.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fsl0g")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -267.0
+offset_top = -177.5
+offset_right = 267.0
+offset_bottom = 177.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 70
+
+[node name="Facil" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 101
+theme_override_styles/normal = SubResource("StyleBoxFlat_b66tt")
+text = "FACIL"
+
+[node name="Normal" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 101
+theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
+text = "NORMAL"
+
+[node name="Dificil" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 101
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hy44")
+text = "DIFICIL"
+
+[node name="Regresar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 101
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hy44")
+text = "REGRESAR"
+
+[node name="aviso" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 308.0
+offset_top = 470.0
+offset_right = 1680.0
+offset_bottom = 602.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxFlat_33xl7")
+text = "Cambiar dificultad"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="VBoxContainer/Facil" to="." method="_on_facil_pressed"]
+[connection signal="pressed" from="VBoxContainer/Normal" to="." method="_on_normal_pressed"]
+[connection signal="pressed" from="VBoxContainer/Dificil" to="." method="_on_dificil_pressed"]
+[connection signal="pressed" from="VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]

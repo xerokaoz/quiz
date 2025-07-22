@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://driay5uqbatar"
+path="res://.godot/imported/sad.ogg-f5edbeb5c7d610281b5dc6b73b047836.oggvorbisstr"
+
+[deps]
+
+source_file="res://musica y sonidos/sad.ogg"
+dest_files=["res://.godot/imported/sad.ogg-f5edbeb5c7d610281b5dc6b73b047836.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

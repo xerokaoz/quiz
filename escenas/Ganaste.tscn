@@ -1,0 +1,112 @@
+[gd_scene load_steps=24 format=3 uid="uid://d3bsmkgi5xxsx"]
+
+[ext_resource type="Script" uid="uid://c1ig8lhud52fd" path="res://escenas/ganaste.gd" id="1_f2ady"]
+[ext_resource type="Texture2D" uid="uid://cqh1qclijkxhb" path="res://imagenes/ganador.jpg" id="1_qyo50"]
+[ext_resource type="Texture2D" uid="uid://c5e34prj0x68q" path="res://animaciones/chopper/frame_0_delay-0.27s.png" id="2_f2ady"]
+[ext_resource type="Texture2D" uid="uid://rxw40r6c20f4" path="res://animaciones/chopper/frame_1_delay-0.27s.png" id="3_1d5r6"]
+[ext_resource type="Texture2D" uid="uid://oaln1pmi4g5d" path="res://animaciones/chopper/frame_2_delay-0.27s.png" id="4_6kckr"]
+[ext_resource type="Texture2D" uid="uid://dww6kk3n55qa7" path="res://animaciones/chopper/frame_3_delay-0.27s.png" id="5_dgee5"]
+[ext_resource type="Texture2D" uid="uid://crr0pn6v7qvxe" path="res://animaciones/boa/frame_00_delay-0.08s.png" id="6_5xxyd"]
+[ext_resource type="Texture2D" uid="uid://nbhjdv5bg4e3" path="res://animaciones/boa/frame_01_delay-0.08s.png" id="7_0eub8"]
+[ext_resource type="Texture2D" uid="uid://ubps648hjv3u" path="res://animaciones/boa/frame_10_delay-0.08s.png" id="8_ahp33"]
+[ext_resource type="Texture2D" uid="uid://qmlgn583aqm5" path="res://animaciones/boa/frame_11_delay-0.08s.png" id="9_24eyn"]
+[ext_resource type="Texture2D" uid="uid://bx44ylju2g1ka" path="res://animaciones/boa/frame_02_delay-0.08s.png" id="10_jv3vn"]
+[ext_resource type="Texture2D" uid="uid://g5ib3nb5sdo6" path="res://animaciones/boa/frame_03_delay-0.08s.png" id="11_lq5c5"]
+[ext_resource type="Texture2D" uid="uid://di8js075vof6s" path="res://animaciones/boa/frame_04_delay-0.08s.png" id="12_x22f2"]
+[ext_resource type="Texture2D" uid="uid://c7xm7yw5hsojm" path="res://animaciones/boa/frame_05_delay-0.08s.png" id="13_6rfvk"]
+[ext_resource type="Texture2D" uid="uid://dlhmy3e8qajg" path="res://animaciones/boa/frame_06_delay-0.08s.png" id="14_e86ua"]
+[ext_resource type="Texture2D" uid="uid://cqlpf1ep6f2lm" path="res://animaciones/boa/frame_07_delay-0.08s.png" id="15_163va"]
+[ext_resource type="Texture2D" uid="uid://bplxv0ni6fjnn" path="res://animaciones/boa/frame_08_delay-0.08s.png" id="16_ws421"]
+[ext_resource type="Texture2D" uid="uid://cp0chuqmwfvk4" path="res://animaciones/boa/frame_09_delay-0.08s.png" id="17_5w5hw"]
+[ext_resource type="Texture2D" uid="uid://bl2ow4jst5oxq" path="res://animaciones/sanji/frame_0_delay-0.3s.png" id="18_ahk5s"]
+[ext_resource type="Texture2D" uid="uid://okppkvyi8l1e" path="res://animaciones/sanji/frame_1_delay-0.3s.png" id="19_b457k"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_mil1s"]
+frames = 4
+speed_scale = 2.1
+frame_0/texture = ExtResource("2_f2ady")
+frame_1/texture = ExtResource("3_1d5r6")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_6kckr")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_dgee5")
+frame_3/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_6yrjr"]
+frames = 12
+frame_0/texture = ExtResource("6_5xxyd")
+frame_0/duration = 0.08
+frame_1/texture = ExtResource("7_0eub8")
+frame_1/duration = 0.08
+frame_2/texture = ExtResource("10_jv3vn")
+frame_2/duration = 0.08
+frame_3/texture = ExtResource("11_lq5c5")
+frame_3/duration = 0.08
+frame_4/texture = ExtResource("12_x22f2")
+frame_4/duration = 0.08
+frame_5/texture = ExtResource("13_6rfvk")
+frame_5/duration = 0.08
+frame_6/texture = ExtResource("14_e86ua")
+frame_6/duration = 0.08
+frame_7/texture = ExtResource("15_163va")
+frame_7/duration = 0.08
+frame_8/texture = ExtResource("16_ws421")
+frame_8/duration = 0.08
+frame_9/texture = ExtResource("17_5w5hw")
+frame_9/duration = 0.08
+frame_10/texture = ExtResource("8_ahp33")
+frame_10/duration = 0.08
+frame_11/texture = ExtResource("9_24eyn")
+frame_11/duration = 0.08
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_snp20"]
+frames = 2
+frame_0/texture = ExtResource("18_ahk5s")
+frame_0/duration = 0.3
+frame_1/texture = ExtResource("19_b457k")
+frame_1/duration = 0.3
+
+[node name="ganaste" type="Node2D"]
+script = ExtResource("1_f2ady")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_qyo50")
+
+[node name="chopper" type="Sprite2D" parent="TextureRect"]
+position = Vector2(467, 840)
+texture = SubResource("AnimatedTexture_mil1s")
+
+[node name="boa" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1498, 778)
+texture = SubResource("AnimatedTexture_6yrjr")
+
+[node name="sanji" type="Sprite2D" parent="TextureRect"]
+position = Vector2(1001, 785)
+texture = SubResource("AnimatedTexture_snp20")
+
+[node name="score" type="Label" parent="."]
+offset_right = 1915.0
+offset_bottom = 167.0
+theme_override_colors/font_color = Color(0.854902, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0.222747, 0.181537, 1)
+theme_override_font_sizes/font_size = 76
+text = "Lo lograste haz conseguido puntaje"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 947.0
+offset_top = 317.0
+offset_right = 1939.0
+offset_bottom = 584.0
+theme_override_colors/font_color = Color(0.607843, 0, 0.917647, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 96
+text = "Para mi tu eres mi one piece <3"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

@@ -1,0 +1,390 @@
+{
+  "preguntas_one_piece": [
+	{
+	  "id": 1,
+	  "pregunta": "¿Quién fue el primer miembro de los Sombrero de Paja mostrado en el anime?",
+	  "opciones": {
+		"A": "Luffy",
+		"B": "Zoro",
+		"C": "Nami",
+		"D": "Usopp"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 2,
+	  "pregunta": "¿Qué edad tenía Luffy antes del salto temporal?",
+	  "opciones": {
+		"A": "18",
+		"B": "15",
+		"C": "16",
+		"D": "17"
+	  },
+	  "respuesta_correcta": "D"
+	},
+	{
+	  "id": 3,
+	  "pregunta": "¿Cuál fue el primer ataque con nombre que usó Luffy?",
+	  "opciones": {
+		"A": "Gum-Gum Whip",
+		"B": "Gum-Gum Bazooka",
+		"C": "Gum-Gum Pistol",
+		"D": "Gum-Gum Rocket"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 4,
+	  "pregunta": "¿Dónde fue ejecutado Gol D. Roger?",
+	  "opciones": {
+		"A": "Marineford",
+		"B": "Water 7",
+		"C": "Sabaody",
+		"D": "Loguetown"
+	  },
+	  "respuesta_correcta": "D"
+	},
+	{
+	  "id": 5,
+	  "pregunta": "¿Cuál es el verdadero nombre de Ace?",
+	  "opciones": {
+		"A": "Gol D. Ace",
+		"B": "Portgas D. Ace",
+		"C": "Ace D. Luffy",
+		"D": "Edward D. Ace"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 6,
+	  "pregunta": "¿Qué fruta comió Luffy?",
+	  "opciones": {
+		"A": "Bara Bara no Mi",
+		"B": "Gomu Gomu no Mi",
+		"C": "Suna Suna no Mi",
+		"D": "Mera Mera no Mi"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 7,
+	  "pregunta": "¿Cuál es el objetivo de Luffy?",
+	  "opciones": {
+		"A": "Ser el rey de los piratas",
+		"B": "Derrotar al gobierno mundial",
+		"C": "Proteger a Nami",
+		"D": "Encontrar a su hermano"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 8,
+	  "pregunta": "¿Qué representa el sombrero de paja de Luffy?",
+	  "opciones": {
+		"A": "Su vínculo con Shanks",
+		"B": "Su relación con su padre",
+		"C": "Su símbolo de justicia",
+		"D": "Su primera victoria"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 9,
+	  "pregunta": "¿Qué significa “D” en el nombre de varios personajes?",
+	  "opciones": {
+		"A": "Es una marca de sangre noble",
+		"B": "Es un misterio sin resolver",
+		"C": "Significa \"Destino\"",
+		"D": "Es un título de pirata"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 10,
+	  "pregunta": "¿Qué animal tiene Luffy como mascota simbólica?",
+	  "opciones": {
+		"A": "Gaviota",
+		"B": "León",
+		"C": "Mapache",
+		"D": "Ciervo"
+	  },
+	  "respuesta_correcta": "D",
+	  "nota": "Tony Tony Chopper"
+	},
+	{
+	  "id": 11,
+	  "pregunta": "¿Quién es el cocinero de la tripulación?",
+	  "opciones": {
+		"A": "Zoro",
+		"B": "Usopp",
+		"C": "Sanji",
+		"D": "Franky"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 12,
+	  "pregunta": "¿Qué nombre recibe el barco original de los Sombrero de Paja?",
+	  "opciones": {
+		"A": "Going Merry",
+		"B": "Thousand Sunny",
+		"C": "Merry Go",
+		"D": "Red Force"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 13,
+	  "pregunta": "¿Qué es el Haki?",
+	  "opciones": {
+		"A": "Una fruta del diablo",
+		"B": "Un arma",
+		"C": "Una técnica de combate",
+		"D": "Un mineral"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 14,
+	  "pregunta": "¿Quién es el padre de Luffy?",
+	  "opciones": {
+		"A": "Garp",
+		"B": "Dragon",
+		"C": "Roger",
+		"D": "Shanks"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 15,
+	  "pregunta": "¿Qué es Enies Lobby?",
+	  "opciones": {
+		"A": "Un cuartel de la marina",
+		"B": "Una prisión",
+		"C": "Un tribunal del Gobierno Mundial",
+		"D": "Una ciudad subterránea"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 16,
+	  "pregunta": "¿Qué hizo Nico Robin durante su infancia?",
+	  "opciones": {
+		"A": "Vivir en una isla del cielo",
+		"B": "Fue criada por piratas",
+		"C": "Leyó Poneglyphs",
+		"D": "Robó frutas del diablo"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 17,
+	  "pregunta": "¿Quién mató a Ace?",
+	  "opciones": {
+		"A": "Akainu",
+		"B": "Barbanegra",
+		"C": "Aokiji",
+		"D": "Kizaru"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 18,
+	  "pregunta": "¿Qué organización tenía como símbolo la paloma blanca?",
+	  "opciones": {
+		"A": "Revolucionarios",
+		"B": "CP9",
+		"C": "Marines",
+		"D": "Germa 66"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 19,
+	  "pregunta": "¿Quién es el carpintero de la tripulación?",
+	  "opciones": {
+		"A": "Sanji",
+		"B": "Franky",
+		"C": "Usopp",
+		"D": "Brook"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 20,
+	  "pregunta": "¿Qué instrumento toca Brook?",
+	  "opciones": {
+		"A": "Guitarra",
+		"B": "Violín",
+		"C": "Flauta",
+		"D": "Saxofón"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 21,
+	  "pregunta": "¿Qué es el One Piece?",
+	  "opciones": {
+		"A": "Un arma",
+		"B": "Un reino",
+		"C": "Un tesoro legendario",
+		"D": "Un barco"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 22,
+	  "pregunta": "¿Qué personaje tiene una fruta tipo logia?",
+	  "opciones": {
+		"A": "Luffy",
+		"B": "Ace",
+		"C": "Zoro",
+		"D": "Sanji"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 23,
+	  "pregunta": "¿Quién puede transformarse en reno?",
+	  "opciones": {
+		"A": "Franky",
+		"B": "Chopper",
+		"C": "Brook",
+		"D": "Usopp"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 24,
+	  "pregunta": "¿Cuál es el mayor sueño de Usopp?",
+	  "opciones": {
+		"A": "Convertirse en el mejor espadachín",
+		"B": "Ser un valiente guerrero del mar",
+		"C": "Crear armas",
+		"D": "Comer todas las frutas del diablo"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 25,
+	  "pregunta": "¿Qué fruta comió Robin?",
+	  "opciones": {
+		"A": "Hana Hana no Mi",
+		"B": "Mera Mera no Mi",
+		"C": "Suna Suna no Mi",
+		"D": "Yami Yami no Mi"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 26,
+	  "pregunta": "¿Qué poder tiene la fruta de Enel?",
+	  "opciones": {
+		"A": "Hielo",
+		"B": "Luz",
+		"C": "Rayo",
+		"D": "Oscuridad"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 27,
+	  "pregunta": "¿Cuál es el apellido real de Doflamingo?",
+	  "opciones": {
+		"A": "Rosinante",
+		"B": "Donquixote",
+		"C": "Vinsmoke",
+		"D": "D."
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 28,
+	  "pregunta": "¿Cuál es el mayor miedo de Brook?",
+	  "opciones": {
+		"A": "La oscuridad",
+		"B": "Perder sus huesos",
+		"C": "Morir de nuevo",
+		"D": "El mar"
+	  },
+	  "respuesta_correcta": "C"
+	},
+	{
+	  "id": 29,
+	  "pregunta": "¿Dónde entrenó Luffy durante el salto temporal?",
+	  "opciones": {
+		"A": "Rusukaina",
+		"B": "Amazon Lily",
+		"C": "Sabaody",
+		"D": "Marineford"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 30,
+	  "pregunta": "¿Qué fruta comió Law?",
+	  "opciones": {
+		"A": "Gomu Gomu",
+		"B": "Ope Ope no Mi",
+		"C": "Bomu Bomu",
+		"D": "Hie Hie no Mi"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 31,
+	  "pregunta": "¿Qué habilidad especial tiene Usopp después del salto temporal?",
+	  "opciones": {
+		"A": "Controlar plantas",
+		"B": "Leer pensamientos",
+		"C": "Nadar en lava",
+		"D": "Volar"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 32,
+	  "pregunta": "¿Qué personaje fue criado por lobos?",
+	  "opciones": {
+		"A": "Luffy",
+		"B": "Sanji",
+		"C": "Franky",
+		"D": "Carrot"
+	  },
+	  "respuesta_correcta": "D"
+	},
+	{
+	  "id": 33,
+	  "pregunta": "¿Qué personaje tiene la fruta del alma?",
+	  "opciones": {
+		"A": "Big Mom",
+		"B": "Moria",
+		"C": "Brook",
+		"D": "Hancock"
+	  },
+	  "respuesta_correcta": "A"
+	},
+	{
+	  "id": 34,
+	  "pregunta": "¿Quién es considerado el “Dios” en Skypeia?",
+	  "opciones": {
+		"A": "Gan Fall",
+		"B": "Enel",
+		"C": "Luffy",
+		"D": "Zoro"
+	  },
+	  "respuesta_correcta": "B"
+	},
+	{
+	  "id": 35,
+	  "pregunta": "¿Qué representa el número “3D2Y”?",
+	  "opciones": {
+		"A": "Código de guerra",
+		"B": "Tiempo de entrenamiento",
+		"C": "Nombre de barco",
+		"D": "Fruta del diablo"
+	  },
+	  "respuesta_correcta": "B"
+	}
+  ]
+}
